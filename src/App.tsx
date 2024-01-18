@@ -1,7 +1,12 @@
+import { Canvas } from "@react-three/fiber";
+import Box from "./Box";
+
 function App() {
   return (
     <>
-      <div>asdf</div>
+      <Canvas>
+        <Box />
+      </Canvas>
     </>
   );
 }
