@@ -7,19 +7,25 @@ Source: https://sketchfab.com/3d-models/cat-70a23788ef984a7a9a1c9a9fe6d5a651
 Title: Cat
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes, materials } = useGLTF("/scene.gltf");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        <mesh geometry={nodes.Object_2.geometry} material={materials.lambert2SG} />
-        <mesh geometry={nodes.Object_3.geometry} material={materials.lambert2SG} />
+        <mesh
+          geometry={nodes.Object_2.geometry}
+          material={materials.lambert2SG}
+        />
+        <mesh
+          geometry={nodes.Object_3.geometry}
+          material={materials.lambert2SG}
+        />
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload("/scene.gltf");
