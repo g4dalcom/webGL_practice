@@ -1,7 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
-import Box from "./Box";
+// import Box from "./Box";
+import { Model } from "./Model";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <Suspense fallback={null}>
-          <Box />
-          {/* <Model /> */}
+          {/* <Box /> */}
+          <Model />
           <Environment preset="park" background></Environment>
         </Suspense>
       </Canvas>
