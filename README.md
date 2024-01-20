@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# React-Three-Fiber Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 프로젝트 설명
+- React-Three-Fiber, React-Three-Drei 를 이용하여 3D 이미지 구현
+- 외부 3D 이미지 구현
+- 내장 3D 이미지(박스) 마우스 이벤트에 따라 변화
 
-Currently, two official plugins are available:
+## 구현 내용
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[외부 3D 이미지 구현 링크](https://blog.kakaocdn.net/dn/XxbhU/btsDGllZhqy/nxaRp6hDHskKMPqc5QaNyk/img.gif)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[내장 3D 이미지 구현 링크](https://blog.kakaocdn.net/dn/bT30Xl/btsDJaxeNDR/HSMQuc9tOf60p1V7o4ggB1/img.gif)
